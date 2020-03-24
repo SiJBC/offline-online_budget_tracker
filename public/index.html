@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#317EFB" />
-    <link rel="manifest" href="manifest.webmanifest">
 
     <link
       rel="stylesheet"
@@ -32,9 +31,6 @@
           <button id="sub-btn">
             <i class="fa fa-minus"></i> Subtract Funds
           </button>
-          <button id="del-btn">
-            <i class="fa fa-trash"></i> Delete Pending records
-          </button>
         </div>
         <p role="alert" class="error"></p>
       </form>
@@ -55,15 +51,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="/db.js"></script>
     <script src="/index.js"></script>
-    
-    <script>  
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("service-worker.js").then(reg => {
-            console.log("We found your service worker file!", reg);
-          });
-        });
-      }
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then(reg => {
+            console.log("We found your service worker file!", reg);
+          });
+        });
+      }
     </script>
+
   </body>
 </html>
