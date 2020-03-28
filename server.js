@@ -7,6 +7,10 @@ const PORT = 3000;
 
 const app = express();
 
+var MONGODV_URI = process.env.MONOGODB_URI || "mongodb://localhost/mogoHeadlines";
+
+mongoose.connect(MONGODB_URI)
+
 app.use(logger("dev"));
 
 app.use(compression());
